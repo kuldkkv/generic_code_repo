@@ -7,7 +7,7 @@ import random
 str_chars = string.ascii_letters + string.digits + '_-=-'
 num_chars = string.digits
 str1 = 'S:13,S:10,S:30,S:8,S:7,N:6,S:16,N:3,S:7,S:18,N:1,N:3,N:3,N:3,N:5,N:3,S:22,S:27,S:11,S:10,S:27,S:11,S:17,N:2,N:8,N:5,N:3'
-num_lines = 100
+num_lines = 10000 * 100
 
 def gen_rand_str(size=30, chars=str_chars):
 	return '"' + ''.join(random.choice(chars) for _ in range(size)) + '"'
